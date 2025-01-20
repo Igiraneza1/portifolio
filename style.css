@@ -1,14 +1,17 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.head{
-    background-color:white;
+
+.head {
+    background-color: white;
     font-size: 90%;
     position: fixed;
-    width: 90%;
+    width: 100%;
+    z-index: 10;
 }
 
 header {
@@ -18,9 +21,10 @@ header {
     padding: 20px 50px;
     background-color: #f8f9fa;
 }
-header h1{
+
+header h1 {
     color: #000;
-    font-size: 250%;
+    font-size: 2em;
 }
 
 header nav a {
@@ -28,16 +32,16 @@ header nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    text-align: right;
 }
 
 header nav a:hover {
     color: yellow;
 }
 
+/* About Section */
 .about {
     text-align: center;
-    padding-top: 12%;
+    padding-top: 15%;
 }
 
 .about img {
@@ -45,7 +49,6 @@ header nav a:hover {
     width: 170px;
     height: 170px;
     object-fit: cover;
-    
 }
 
 .about h1 {
@@ -72,6 +75,7 @@ header nav a:hover {
     background-color: #e6b800;
 }
 
+/* Projects Section */
 .projects {
     padding: 50px;
     background-color: #f8f9fa;
@@ -101,17 +105,7 @@ header nav a:hover {
     max-width: 600px;
 }
 
-.project-item div h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.project-item div p {
-    margin-bottom: 10px;
-    font-size: 1em;
-    line-height: 1.6;
-}
-
+/* Contacts Section */
 .contacts {
     padding: 50px 20px;
     text-align: center;
@@ -139,9 +133,11 @@ footer {
     padding: 10px;
     font-size: 0.9em;
 }
-.arrow{
-    font-size: 400%;
+
+.arrow {
+    font-size: 4em;
 }
+
 footer a {
     text-decoration: none;
     color: #333;
@@ -150,4 +146,63 @@ footer a {
 
 footer a:hover {
     color: #fefefe;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    header nav a {
+        margin: 10px 5px;
+        font-size: 0.9em;
+    }
+
+    .about {
+        padding-top: 20%;
+    }
+
+    .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        font-size: 0.8em;
+    }
+
+    .about h1 {
+        font-size: 1.5em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    .arrow {
+        font-size: 3em;
+    }
 }
