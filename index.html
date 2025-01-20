@@ -10,69 +10,91 @@
     <title>Portfolio</title>
 </head>
 <body>
-<header class="head">
+<header class="head text-center py-3">
     <h1 class="name">Adeline IGIRANEZA</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contacts">Contacts</a>
+    <nav class="d-flex justify-content-center">
+        <a class="mx-3" href="#about">About</a>
+        <a class="mx-3" href="#projects">Projects</a>
+        <a class="mx-3" href="#contacts">Contacts</a>
     </nav>
 </header>
-<section class="about" id="about">
-    <img src="Adeline.jpg" alt="Profile Picture">
-    <h1>About</h1>
-    <p>
-        I am an IT student passionate about front-end development and UI/UX design and using technology to create efficient solutions. 
-        I’m growing my skills in coding, data analysis, design, and Microsoft tools. 
-        I’m good at solving problems, building strong relationships, and understanding customer needs to deliver valuable solutions.
-        I aim to empower and innovate through technology.</p>
-    <a href="https://docs.google.com/document/d/17MH7UlGlfcVacpByXB5izx85KLziRgPWzlJcfgXKvAM/edit?usp=sharing"><button>Resume</button></a>
+
+<section class="about container text-center my-5" id="about">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <img src="Adeline.jpg" class="img-fluid rounded-circle mb-3" alt="Profile Picture">
+        </div>
+        <div class="col-md-8 mx-auto">
+            <h2>About</h2>
+            <p>
+                I am an IT student passionate about front-end development and UI/UX design and using technology to create efficient solutions. 
+                I’m growing my skills in coding, data analysis, design, and Microsoft tools. 
+                I’m good at solving problems, building strong relationships, and understanding customer needs to deliver valuable solutions.
+                I aim to empower and innovate through technology.
+            </p>
+            <a href="https://docs.google.com/document/d/17MH7UlGlfcVacpByXB5izx85KLziRgPWzlJcfgXKvAM/edit?usp=sharing" class="btn btn-primary">Resume</a>
+        </div>
+    </div>
 </section>
 
-<section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-        <img src="pl.jpg" alt="TechBridge">
-        <div>
-            <h3>TechBridge</h3>
-            <p>Technology for All. Bringing people together to bridge the gap in digital skills and provide accessible resources for future success.
-                Not only does technology enlighten students and improve their skills, but it also motivates them and makes them eager to learn.
-            </p>
-            <a href="https://igiraneza1.github.io/technologies/">See Project</a>
-        </div>
-    </div>
-    <div class="project-item">
-        <img src="image.jpg" alt="Other Project">
-        <div>
-            <h3>Community Training</h3>
-            <p> Technology has played a major role in education. 
-                Implementation of technology in educational institutions has increased success among students. 
-                Not only does technology enlighten students and improve their skills, but it also motivates them and makes them eager to learn.</p>
-        </div>
-    </div>
-    <div class="project-item">
-        <img src="rwanda-ict.jpg" alt="Other Project">
-        <div>
-            <h3>Communication</h3>
-            <p>We believe that everyone has the ability to know and access technology. 
-                Our mission is to break down barriers by providing accessible, inclusive, and comprehensive training in digital skills. 
-                By empowering individuals with the right knowledge and tools, we enable them to thrive in the digital age, regardless of 
-                their background or experience. Technology should be for everyone, and we are here to ensure that it is within reach for all</p>
-        </div>
-</section>
-<h1>Contacts</h1>
-<footer>
-    <section class="contacts" id="contacts"></section>
-        <p><b>Find more projects and connect with me on social media</b></p>
-        <p class="arrow">&DownArrow;</p>
-            <div class="socialmedia">
-                <a href="https://wa.me/250782766241" target="blank"><i class="fab fa-whatsapp-square"></i>WhatsApp</a>
-                <a href="https://www.instagram.com/tech___bridge" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
-                <a href="https://github.com/Igiraneza1" target="blank"><i class="fab fa-github"></i> Github</a>
-                <a href="https://https://x.com/AdlnIg" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
-                <a href="www.linkedin.com/in/adeline-igiraneza/" target="blank"><i class="fab fa-linkedin">Linkedin</i></a>
+<section class="projects container my-5" id="projects">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="project-item card">
+                <img src="pl.jpg" class="card-img-top" alt="TechBridge">
+                <div class="card-body">
+                    <h3>TechBridge</h3>
+                    <p>
+                        Technology for All. Bringing people together to bridge the gap in digital skills and provide accessible resources for future success.
+                        Not only does technology enlighten students and improve their skills, but it also motivates them and makes them eager to learn.
+                    </p>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn btn-primary">See Project</a>
+                </div>
             </div>
-    </section>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="project-item card">
+                <img src="image.jpg" class="card-img-top" alt="Community Training">
+                <div class="card-body">
+                    <h3>Community Training</h3>
+                    <p>
+                        Technology has played a major role in education. Implementation of technology in educational institutions has increased success among students. 
+                        Not only does technology enlighten students and improve their skills, but it also motivates them and makes them eager to learn.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="project-item card">
+                <img src="rwanda-ict.jpg" class="card-img-top" alt="Communication">
+                <div class="card-body">
+                    <h3>Communication</h3>
+                    <p>
+                        We believe that everyone has the ability to know and access technology. 
+                        Our mission is to break down barriers by providing accessible, inclusive, and comprehensive training in digital skills. 
+                        By empowering individuals with the right knowledge and tools, we enable them to thrive in the digital age, regardless of their background or experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts container my-5 text-center" id="contacts">
+    <h2>Contacts</h2>
+    <p><b>Find more projects and connect with me on social media</b></p>
+    <p class="arrow">&DownArrow;</p>
+    <div class="socialmedia d-flex flex-wrap justify-content-center">
+        <a class="mx-2" href="https://wa.me/250782766241" target="_blank"><i class="fab fa-whatsapp-square"></i> WhatsApp</a>
+        <a class="mx-2" href="https://www.instagram.com/tech___bridge" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a class="mx-2" href="https://github.com/Igiraneza1" target="_blank"><i class="fab fa-github"></i> Github</a>
+        <a class="mx-2" href="https://x.com/AdlnIg" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a class="mx-2" href="www.linkedin.com/in/adeline-igiraneza/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+</section>
+
+<footer class="text-center py-3 bg-dark text-white">
     <p>2024 Adeline. All Rights Reserved.</p>
 </footer>
 
